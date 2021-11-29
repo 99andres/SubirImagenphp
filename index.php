@@ -11,9 +11,25 @@
             width:450px;
             border:1px solid black;    
         }
+        .efecto{
+            width:12px;
+            height: 12px;
+            border-radius: 50%;
+            transition:ease  .3s;
+            animation: efecto 1.2s infinite;
+        }
+        @keyframes efecto{
+       0%{
+            box-shadow: 0 0 0 0 rgba(0,0,0,0.85);
+        }
+        100%{
+            box-shadow: 0 0 0 25px rgba(26,116,26,0.3);
+        }
+}
     </style>
 </head>
 <body>
+    <div class='efecto'></div>
     <form action="datosImagen.php" method="POST" enctype="multipart/form-data"> 
         <table>
             <tr>
